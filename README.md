@@ -14,3 +14,15 @@ Este proyecto va dirigido a un cliente imaginario que nos pedirá una aplicació
 
 #Dependencia del proyecto
 Este es un proyecto independiente que no depende de ningún otro y que no será incorporado en ningún otro.
+
+#Arquitectura
+Se hará un diseño con una arquitectura de microservicios realizandolo los más diferenciados posibles. Se diseñará una API base que irá llamando a los servicios que el cliente desee incorporar en su web.
+En este caso hemos supuesto que el cliente deseará:
+* Iniciar sesión en el sistema a través de diversas aplicaciones como Google o Facebook.
+* Mantener un sistema errores en la aplicación.
+* Obtener una estadísticas de la información almacenada.
+* Obtener patrones de los clientes.
+* Gestión de peliculas.
+* Gestión de salas.
+* Gestión de entradas.
+Entre otra ventajas al usar los micros servicios se dividirá el proyecto en tareas que podrán ir enseñándole al cliente y podrá integrarse y modificarse cada parte del proyecto.
