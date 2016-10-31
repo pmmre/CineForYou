@@ -24,5 +24,37 @@ En este caso hemos supuesto que el cliente deseará:
 * Obtener patrones de los clientes.
 * Gestión de peliculas.
 * Gestión de salas.
-* Gestión de entradas.
+* Gestión de reservas online
+* Gestión de reservas en taquilla.
+
 Entre otra ventajas al usar los micros servicios se dividirá el proyecto en tareas que podrán ir enseñándole al cliente y podrá integrarse y modificarse cada parte del proyecto.
+
+#Metodología
+Para el desarrollo de la aplicación se utilizará una metodología. Se irán desarrollando distintas versiones del software que se irán testeando, mostrando al cliente y desplegando.
+La primera versión será una funcional de la aplicación que solamente mostrará al usuario lo más básico posible y poco a poco se le irán incorporando servicios para completarlo de funcionalidad.
+Con esta metodología se harán un estudio general de las necesidades del cliente y para cada servicio se irán diseñando sus especificaciones conforme se vayan diseñando.
+
+#Lenguajes
+Cómo se combinará metodología ágil y un sistemas basado en servicios, usaremos diversos lenguaje según interese para cada servicio o componente. 
+Para las partes que requieran una gran capacidad de cálculo se usará una base de datos NoSQL cómo podría ser MongoDB y un lenguaje apto para estas operaciones como pyhton o R.
+Para otros elementos se usará el lenguaje que se considere más optimo para realizar dicha tarea.
+
+#Organización de los hitos
+Como se indicó anteriormente se irán desarrollando versiones del proyecto, que no todas tienen un orden secuencial y pueden ser entendidas como mejoras:
+Versión inicial: Aplicación básica que mostrará la cartelera del cine y la ubicación del mismo.Para ello, deberán de diseñarse la gestión de películas y las salas que podrían ser componentes independientes que trabaje con la aplicación general y se usará el servicio de mapas para ubicar el cine.
+* **Gestión de ventas online:** Para esta versión debería de poderse iniciar sesión con los sistemas de Google y Facebook y diseñar un componente para el alquiler de entradas.
+* **Gestión de ventas por taquilla:** Para esta versión se necesario controlar los privilegios de los usuarios para distinguir empleados y crear un componente para gestionar la venta de entradas por taquilla.
+* **Gestión de la estadística:** Diseñar un componente que obtenga información de los datos almacenados en las bases de datos.
+* **Gestión de patrones de usuario:** A partir de la información de los usuarios, que realizan compras online, obtener un patrón de las preferencias de los mismos.
+* **Gestión de errores:** Consiste en diseñar un componente que monitorice los errores que vayan ocurriendo en el sistema para poder solucionarlos lo antes posible.
+ 
+Cómo se indico anteriormente, se utiliza una metodología ágil, por lo tanto, se pueden agregar nuevos componentes según el cliente los vaya requiriendo.
+
+
+#Razones por los que se ha escogido este proyecto
+Este proyecto se ha escogido porque tiene muchos elementos que pueden incorporarse como servicios individuales y al hacerlo podemos darle una gran calidad y flexibilidad al producto.
+
+
+#Licencia
+El software está sujeto a la licencia GNU GPL v3.
+
