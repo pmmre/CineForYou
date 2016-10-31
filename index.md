@@ -10,6 +10,9 @@ Este problema puede suponer poca clientela para el cine y, por lo tanto, una pé
 Para solventar este problema se ofrece CineForYou, que es un proyecto que intenta solventar este problema diseñando microservicios que son adaptados a este ámbito. Cada cine podrá usar los microservicios que le convengan y adaptarlos a sus necesidades. Además permite modificar el funcionamiento de una web de una forma sencilla ya sea creando pequeños funcionalidades nuevas o modificando la interfaz que usan estos microservicios.
 Se busca una reutilización de las funcionalidades y una completa adaptabilidad del producto final para cada cliente.
 
+#Razones por los que se ha escogido este proyecto
+Este proyecto se ha escogido porque tiene muchos elementos que pueden incorporarse como servicios individuales y al hacerlo podemos darle una gran calidad y flexibilidad al producto.
+
 #Objetivo
 Diseñar la web de gestión de cines orientada a servicios para su posterior reutilización.
 
@@ -53,11 +56,6 @@ Versión inicial: Aplicación básica que mostrará la cartelera del cine y la u
 * **Gestión de errores:** Consiste en diseñar un componente que monitorice los errores que vayan ocurriendo en el sistema para poder solucionarlos lo antes posible.
  
 Cómo se indico anteriormente, se utiliza una metodología ágil, por lo tanto, se pueden agregar nuevos componentes según el cliente los vaya requiriendo.
-
-
-#Razones por los que se ha escogido este proyecto
-Este proyecto se ha escogido porque tiene muchos elementos que pueden incorporarse como servicios individuales y al hacerlo podemos darle una gran calidad y flexibilidad al producto.
-
 
 #Licencia
 El software está sujeto a la licencia GNU GPL v3.
