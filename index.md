@@ -3,7 +3,7 @@ layout: index
 ---
 
 # Motivación
-Hoy día los cines necesitan tener páginas web para mostrarle lo que ofrecen a su público. Para disponer de estas web necesitan invertir gran cantidad de dinero en un diseño y desarrollo personalizados y algunas web pueden resultar algo pobres, quedar obsoletas o dejar cumplir correctamente su función.
+Hoy día los cines necesitan tener páginas web para mostrarle lo que ofrecen a su público. Para disponer de estas web necesitan invertir gran cantidad de dinero en un diseño y desarrollo personalizados, lo que supone un gran esfuerzo para las empresas. Además estas webs pueden resultar algo pobres, quedar obsoletas o dejar de cumplir correctamente su función.
 Este problema puede suponer poca clientela para el cine y, por lo tanto, una pérdida económica enorme. Y dependiendo de la arquitectura que tenga debajo será más factible o menos modificar el diseño de la web.
 
 # Descripción
