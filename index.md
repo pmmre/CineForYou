@@ -48,7 +48,7 @@ Para otros elementos se usará el lenguaje que se considere más optimo para rea
 
 #Organización de los hitos
 Como se indicó anteriormente se irán desarrollando versiones del proyecto, que no todas tienen un orden secuencial y pueden ser entendidas como mejoras:
-Versión inicial: Aplicación básica que mostrará la cartelera del cine y la ubicación del mismo.Para ello, deberán de diseñarse la gestión de películas y las salas que podrían ser componentes independientes que trabaje con la aplicación general y se usará el servicio de mapas para ubicar el cine.
+* **Versión inicial:** Aplicación básica que mostrará la cartelera del cine y la ubicación del mismo.Para ello, deberán de diseñarse la gestión de películas y las salas que podrían ser componentes independientes que trabaje con la aplicación general y se usará el servicio de mapas para ubicar el cine.
 * **Gestión de ventas online:** Para esta versión debería de poderse iniciar sesión con los sistemas de Google y Facebook y diseñar un componente para el alquiler de entradas.
 * **Gestión de ventas por taquilla:** Para esta versión se necesario controlar los privilegios de los usuarios para distinguir empleados y crear un componente para gestionar la venta de entradas por taquilla.
 * **Gestión de la estadística:** Diseñar un componente que obtenga información de los datos almacenados en las bases de datos.
