@@ -27,10 +27,35 @@ En este caso hemos supuesto que el cliente deseará:
 * Obtener patrones de los clientes.
 * Gestión de peliculas.
 * Gestión de salas.
-* Gestión de reservas online
-* Gestión de reservas en taquilla.
+* Gestión de venta online.
+* Gestión de venta en taquilla.
 
 Entre otra ventajas al usar los micros servicios se dividirá el proyecto en tareas que podrán ir enseñándole al cliente y podrá integrarse y modificarse cada parte del proyecto.
+
+#Microservicios
+Para realizar las acciones que desea realizar el cliente de una forma independiente y más robusto se realizarán los siguientes servicios:
+
+##Iniciar sesión en el sistema a través de diversas aplicaciones como Google o Facebook
+Este servicio se encargará de gestionar el inicio de sesión de los usuario y de la creación de nuevos usuarios dentro del sistema. Aquí se obtendrá información básica del usuario.
+##Mantener un sistema errores en la aplicación
+Este servicio se encargará de mantener un sistema de errores de todos los componentes del sistema. Para ello, almacenará la información del error junto con el servicio que lo provocó en un fichero en bruto.
+##Obtener una estadísticas de la información almacenada
+Este servicio mostrará diversas estadísticas de los usuarios. Para ello, almacenará determinada información obtenida del resto de base de datos que pueda ser mostrada en forma de gráficas.
+
+##Obtener patrones de los clientes
+
+
+##Gestión de peliculas
+Este servicio se encargará de tener las información de las películas del cine con su descripción, imagenes y trailer. Esta base de datos que usaremos será una base de datos relacional que toda la información que almacenemos tendra una misma estructura.
+##Gestión de salas
+Este servicio se encargará de una gestión de salas dónde se indicará el tamaño y el aforo de estas salas.
+##Gestión de venta online
+Este servicio se encargará de la venta de entradas online y sólo podrá ser accedido por el personal del cine. Una vez vendida la entrada accederá a la gestión de salas para indicar que la entrada ha sido vendida para un día determinado.
+
+##Gestión de venta en taquilla
+Este servicio se encargará de la venta de entradas por taquilla y sólo podrá ser accedido por el personal del cine. Una vez vendida la entrada accederá a la gestión de salas para indicar que la entrada ha sido vendida para un día determinado.
+
+
 
 #Metodología
 Para el desarrollo de la aplicación se utilizará una metodología. Se irán desarrollando distintas versiones del software que se irán testeando, mostrando al cliente y desplegando.
