@@ -7,6 +7,7 @@ Chef tiene la siguiente estructura de directorios para su provisionamiento
 Dentro de cookbooks tenemos los distintas instalaciones que podemos hacer. Dentro de default.rb tenemos los paquetes que instalaremos al ejecutar ese cookbooks. En CineForYou tenemos todos los paquetes necesarios para la api de cines.
 
 Dentro de los archivos default.rb tenemos los paquetes que instalaremos.
+
 ![ChefPaquetes](http://i393.photobucket.com/albums/pp14/pmmre/CC/Ejercicios%20Tema%202%20CC/Seleccioacuten_047_zpsfy1vhkcx.png)
 
 En la siguiente imagen podemos ver las configuraciones de node.json que es dónde se indica las recetas que se ejecutarán y en solo.rb indican dónde se encuentran los archivos de configuración.
