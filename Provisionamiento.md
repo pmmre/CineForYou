@@ -1,4 +1,4 @@
-# Aprovisionamiento de Chef
+# Aprovisionamiento de Chef.
 
 Chef tiene la siguiente estructura de directorios para su provisionamiento
 
