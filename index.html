@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>CineForYou by pmmre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">CineForYou</h1>
+      <h2 class="project-tagline">Gestión de cines</h2>
+      <a href="https://github.com/pmmre/CineForYou" class="btn">View on GitHub</a>
+      <a href="https://github.com/pmmre/CineForYou/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/pmmre/CineForYou/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="motivación" class="anchor" href="#motivaci%C3%B3n" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Motivación</h1>
+
+<p>Hoy día los cines necesitan tener páginas web para mostrarle lo que ofrecen a su público. Para disponer de estas web necesitan invertir gran cantidad de dinero en un diseño y desarrollo personalizados, lo que supone un gran esfuerzo para las empresas. Además estas webs pueden resultar algo pobres, quedar obsoletas o dejar de cumplir correctamente su función.
+Este problema puede suponer poca clientela para el cine y, por lo tanto, una pérdida económica enorme. Y dependiendo de la arquitectura que tenga debajo será más factible o menos modificar el diseño de la web.</p>
+
+<h1>
+<a id="descripción" class="anchor" href="#descripci%C3%B3n" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Descripción</h1>
+
+<p>Para solventar este problema se ofrece CineForYou, que es un proyecto que intenta solventar este problema diseñando microservicios que son adaptados a este ámbito. Cada cine podrá usar los microservicios que le convengan y adaptarlos a sus necesidades. Además permite modificar el funcionamiento de una web de una forma sencilla ya sea creando pequeños funcionalidades nuevas o modificando la interfaz que usan estos microservicios.
+Se busca una reutilización de las funcionalidades y una completa adaptabilidad del producto final para cada cliente.</p>
+
+<h1>
+<a id="razones-por-los-que-se-ha-escogido-este-proyecto" class="anchor" href="#razones-por-los-que-se-ha-escogido-este-proyecto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Razones por los que se ha escogido este proyecto</h1>
+
+<p>Este proyecto se ha escogido porque tiene muchos elementos que pueden incorporarse como servicios individuales y al hacerlo podemos darle una gran calidad y flexibilidad al producto.</p>
+
+<h1>
+<a id="objetivo" class="anchor" href="#objetivo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Objetivo</h1>
+
+<p>Diseñar la web de gestión de cines orientada a servicios para su posterior reutilización.</p>
+
+<h1>
+<a id="cliente" class="anchor" href="#cliente" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cliente</h1>
+
+<p>Este proyecto va dirigido a un cliente imaginario que nos pedirá una aplicación web para la gestión de su cine. El desarrollo de la web se diseñará para solventar su problema de la mejor forma posible y para poder reutilizar cualquier cosa que se diseñe con futuros clientes con un problema similar.</p>
+
+<h1>
+<a id="dependencia-del-proyecto" class="anchor" href="#dependencia-del-proyecto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencia del proyecto</h1>
+
+<p>Este es un proyecto independiente que no depende de ningún otro y que no será incorporado en ningún otro.</p>
+
+<h1>
+<a id="arquitectura" class="anchor" href="#arquitectura" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Arquitectura</h1>
+
+<p>Se hará un diseño con una arquitectura de microservicios realizandolo los más diferenciados posibles. Se diseñará una API base que irá llamando a los servicios que el cliente desee incorporar en su web.
+En este caso hemos supuesto que el cliente deseará:</p>
+
+<ul>
+<li>Iniciar sesión en el sistema a través de diversas aplicaciones como Google o Facebook.</li>
+<li>Mantener un sistema errores en la aplicación.</li>
+<li>Obtener una estadísticas de la información almacenada.</li>
+<li>Obtener patrones de los clientes.</li>
+<li>Gestión de peliculas.</li>
+<li>Gestión de salas.</li>
+<li>Gestión de reservas online</li>
+<li>Gestión de reservas en taquilla.</li>
+</ul>
+
+<p>Entre otra ventajas al usar los micros servicios se dividirá el proyecto en tareas que podrán ir enseñándole al cliente y podrá integrarse y modificarse cada parte del proyecto.</p>
+
+<h1>
+<a id="metodología" class="anchor" href="#metodolog%C3%ADa" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Metodología</h1>
+
+<p>Para el desarrollo de la aplicación se utilizará una metodología. Se irán desarrollando distintas versiones del software que se irán testeando, mostrando al cliente y desplegando.
+La primera versión será una funcional de la aplicación que solamente mostrará al usuario lo más básico posible y poco a poco se le irán incorporando servicios para completarlo de funcionalidad.
+Con esta metodología se harán un estudio general de las necesidades del cliente y para cada servicio se irán diseñando sus especificaciones conforme se vayan diseñando.</p>
+
+<h1>
+<a id="lenguajes" class="anchor" href="#lenguajes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lenguajes</h1>
+
+<p>Cómo se combinará metodología ágil y un sistemas basado en servicios, usaremos diversos lenguaje según interese para cada servicio o componente. 
+Para las partes que requieran una gran capacidad de cálculo se usará una base de datos NoSQL cómo podría ser MongoDB y un lenguaje apto para estas operaciones como pyhton o R.
+Para otros elementos se usará el lenguaje que se considere más optimo para realizar dicha tarea.</p>
+
+<h1>
+<a id="organización-de-los-hitos" class="anchor" href="#organizaci%C3%B3n-de-los-hitos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Organización de los hitos</h1>
+
+<p>Como se indicó anteriormente se irán desarrollando versiones del proyecto, que no todas tienen un orden secuencial y pueden ser entendidas como mejoras:</p>
+
+<ul>
+<li>
+<strong>Versión inicial:</strong> Aplicación básica que mostrará la cartelera del cine y la ubicación del mismo.Para ello, deberán de diseñarse la gestión de películas y las salas que podrían ser componentes independientes que trabaje con la aplicación general y se usará el servicio de mapas para ubicar el cine.</li>
+<li>
+<strong>Gestión de ventas online:</strong> Para esta versión debería de poderse iniciar sesión con los sistemas de Google y Facebook y diseñar un componente para el alquiler de entradas.</li>
+<li>
+<strong>Gestión de ventas por taquilla:</strong> Para esta versión se necesario controlar los privilegios de los usuarios para distinguir empleados y crear un componente para gestionar la venta de entradas por taquilla.</li>
+<li>
+<strong>Gestión de la estadística:</strong> Diseñar un componente que obtenga información de los datos almacenados en las bases de datos.</li>
+<li>
+<strong>Gestión de patrones de usuario:</strong> A partir de la información de los usuarios, que realizan compras online, obtener un patrón de las preferencias de los mismos.</li>
+<li>
+<strong>Gestión de errores:</strong> Consiste en diseñar un componente que monitorice los errores que vayan ocurriendo en el sistema para poder solucionarlos lo antes posible.</li>
+</ul>
+
+<p>Cómo se indico anteriormente, se utiliza una metodología ágil, por lo tanto, se pueden agregar nuevos componentes según el cliente los vaya requiriendo.</p>
+
+<h1>
+<a id="licencia" class="anchor" href="#licencia" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Licencia</h1>
+
+<p>El software está sujeto a la licencia GNU GPL v3.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/pmmre/CineForYou">CineForYou</a> is maintained by <a href="https://github.com/pmmre">pmmre</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
