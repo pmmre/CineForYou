@@ -1,3 +1,4 @@
 # Provisonamiento ansible.
 
-Ejecutar ansible.sh <ip de la máquian remota> <nombre usuario de la máquina remota> <archivo pem> para instalarlo todo.
+Ejemplo de provisionamiento 
+![Provisionamiento Ansible](http://i393.photobucket.com/albums/pp14/pmmre/CC/Ejercicios%20Tema%202%20CC/Seleccioacuten_045_zpsxf5ylgjj.png)
