@@ -47,7 +47,7 @@ Este servicio se encargará de mantener un sistema de errores de todos los compo
 Este servicio mostrará diversas estadísticas de los usuarios. Para ello, almacenará determinada información obtenida del resto de base de datos que pueda ser mostrada en forma de gráficas.
 
 ##Obtener patrones de los clientes
-
+Este microservicio se encargara de obtener un conocimiento sobre los clientes aplicando técnicas de minería de datos usando python y mongodb.
 
 ##Gestión de peliculas
 Este servicio se encargará de tener las información de las películas del cine con su descripción, imagenes y trailer. Esta base de datos que usaremos será una base de datos relacional que toda la información que almacenemos tendra una misma estructura.
@@ -81,6 +81,16 @@ Como se indicó anteriormente se irán desarrollando versiones del proyecto, que
 * **Gestión de errores:** Consiste en diseñar un componente que monitorice los errores que vayan ocurriendo en el sistema para poder solucionarlos lo antes posible.
  
 Cómo se indico anteriormente, se utiliza una metodología ágil, por lo tanto, se pueden agregar nuevos componentes según el cliente los vaya requiriendo.
+
+
+# Provisionamiento
+Para el provisionamiento se usará Chef y Ansible.
+
+## Chef
+Se ha elegido esta herramienta porque es muy utilizada en las empresa y debe de utilizarse en la máquina remota. En el siguiente enlace tenemos un tutorial sobre el uso de chef: [tutorial](https://github.com/pmmre/CineForYou/tree/master/Provisionamiento/Chef)
+
+## Ansible
+Esta herramienta es muy cómoda ya que se puede usar remotamente y se puede ejecutar con una orden para todas las máquinas que queramos. En el siguiente enlace tenemos un tutorial sobre el uso de chef: [tutorial](https://github.com/pmmre/CineForYou/tree/master/Provisionamiento/Ansible)
 
 #Licencia
 El software está sujeto a la licencia GNU GPL v3.
