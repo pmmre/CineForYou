@@ -78,7 +78,6 @@ Como se indicó anteriormente se irán desarrollando versiones del proyecto, que
  
 Cómo se indico anteriormente, se utiliza una metodología ágil, por lo tanto, se pueden agregar nuevos componentes según el cliente los vaya requiriendo.
 
-
 # Provisionamiento
 Para el provisionamiento se usará Chef y Ansible.
 
