@@ -64,11 +64,56 @@ En este caso hemos supuesto que el cliente deseará:</p>
 <li>Obtener patrones de los clientes.</li>
 <li>Gestión de peliculas.</li>
 <li>Gestión de salas.</li>
-<li>Gestión de reservas online</li>
-<li>Gestión de reservas en taquilla.</li>
+<li>Gestión de venta online.</li>
+<li>Gestión de venta en taquilla.</li>
 </ul>
 
 <p>Entre otra ventajas al usar los micros servicios se dividirá el proyecto en tareas que podrán ir enseñándole al cliente y podrá integrarse y modificarse cada parte del proyecto.</p>
+
+<h1>
+<a id="microservicios" class="anchor" href="#microservicios" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Microservicios</h1>
+
+<p>Para realizar las acciones que desea realizar el cliente de una forma independiente y más robusto se realizarán los siguientes servicios:</p>
+
+<h2>
+<a id="iniciar-sesión-en-el-sistema-a-través-de-diversas-aplicaciones-como-google-o-facebook" class="anchor" href="#iniciar-sesi%C3%B3n-en-el-sistema-a-trav%C3%A9s-de-diversas-aplicaciones-como-google-o-facebook" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Iniciar sesión en el sistema a través de diversas aplicaciones como Google o Facebook</h2>
+
+<p>Este servicio se encargará de gestionar el inicio de sesión de los usuario y de la creación de nuevos usuarios dentro del sistema. Aquí se obtendrá información básica del usuario.</p>
+
+<h2>
+<a id="mantener-un-sistema-errores-en-la-aplicación" class="anchor" href="#mantener-un-sistema-errores-en-la-aplicaci%C3%B3n" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mantener un sistema errores en la aplicación</h2>
+
+<p>Este servicio se encargará de mantener un sistema de errores de todos los componentes del sistema. Para ello, almacenará la información del error junto con el servicio que lo provocó en un fichero en bruto.</p>
+
+<h2>
+<a id="obtener-una-estadísticas-de-la-información-almacenada" class="anchor" href="#obtener-una-estad%C3%ADsticas-de-la-informaci%C3%B3n-almacenada" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Obtener una estadísticas de la información almacenada</h2>
+
+<p>Este servicio mostrará diversas estadísticas de los usuarios. Para ello, almacenará determinada información obtenida del resto de base de datos que pueda ser mostrada en forma de gráficas.</p>
+
+<h2>
+<a id="obtener-patrones-de-los-clientes" class="anchor" href="#obtener-patrones-de-los-clientes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Obtener patrones de los clientes</h2>
+
+<p>Este microservicio se encargara de obtener un conocimiento sobre los clientes aplicando técnicas de minería de datos usando python y mongodb.</p>
+
+<h2>
+<a id="gestión-de-peliculas" class="anchor" href="#gesti%C3%B3n-de-peliculas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gestión de peliculas</h2>
+
+<p>Este servicio se encargará de tener las información de las películas del cine con su descripción, imagenes y trailer. Esta base de datos que usaremos será una base de datos relacional que toda la información que almacenemos tendra una misma estructura.</p>
+
+<h2>
+<a id="gestión-de-salas" class="anchor" href="#gesti%C3%B3n-de-salas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gestión de salas</h2>
+
+<p>Este servicio se encargará de una gestión de salas dónde se indicará el tamaño y el aforo de estas salas.</p>
+
+<h2>
+<a id="gestión-de-venta-online" class="anchor" href="#gesti%C3%B3n-de-venta-online" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gestión de venta online</h2>
+
+<p>Este servicio se encargará de la venta de entradas online y sólo podrá ser accedido por el personal del cine. Una vez vendida la entrada accederá a la gestión de salas para indicar que la entrada ha sido vendida para un día determinado.</p>
+
+<h2>
+<a id="gestión-de-venta-en-taquilla" class="anchor" href="#gesti%C3%B3n-de-venta-en-taquilla" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gestión de venta en taquilla</h2>
+
+<p>Este servicio se encargará de la venta de entradas por taquilla y sólo podrá ser accedido por el personal del cine. Una vez vendida la entrada accederá a la gestión de salas para indicar que la entrada ha sido vendida para un día determinado.</p>
 
 <h1>
 <a id="metodología" class="anchor" href="#metodolog%C3%ADa" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Metodología</h1>
@@ -105,6 +150,21 @@ Para otros elementos se usará el lenguaje que se considere más optimo para rea
 </ul>
 
 <p>Cómo se indico anteriormente, se utiliza una metodología ágil, por lo tanto, se pueden agregar nuevos componentes según el cliente los vaya requiriendo.</p>
+
+<h1>
+<a id="provisionamiento" class="anchor" href="#provisionamiento" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Provisionamiento</h1>
+
+<p>Para el provisionamiento se usará Chef y Ansible.</p>
+
+<h2>
+<a id="chef" class="anchor" href="#chef" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Chef</h2>
+
+<p>Se ha elegido esta herramienta porque es muy utilizada en las empresa y debe de utilizarse en la máquina remota. En el siguiente enlace tenemos un tutorial sobre el uso de chef: <a href="https://github.com/pmmre/CineForYou/tree/master/Provisionamiento/Chef">tutorial</a></p>
+
+<h2>
+<a id="ansible" class="anchor" href="#ansible" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ansible</h2>
+
+<p>Esta herramienta es muy cómoda ya que se puede usar remotamente y se puede ejecutar con una orden para todas las máquinas que queramos. En el siguiente enlace tenemos un tutorial sobre el uso de chef: <a href="https://github.com/pmmre/CineForYou/tree/master/Provisionamiento/Ansible">tutorial</a></p>
 
 <h1>
 <a id="licencia" class="anchor" href="#licencia" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Licencia</h1>
