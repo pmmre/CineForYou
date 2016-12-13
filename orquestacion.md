@@ -100,12 +100,9 @@ Ya tenemos todo listo para la creación y provisionamiento de cualquier máquina
 Una vez introducido lo anterior puede instalarse la máquina virtual y provisionarse ejecutando con el siguiente comando: vagrant up --`provider=aws --provision`
 
 También son importantes los siguientes comandos:
-
 - `vagrant up --provider=aws` para crear una máquina virtual si no está ya creada o para iniciar una máquina.
 - `vagrant halt` para apagar la máquina remotamente.
 - `vagrant provision` para provisionar la máquina ya creada si tenemos modificaciones en alguna aplicación.
 - `vagrant ssh` para realizar un ssh con la máquina inicializada.
 - `vagrant destroy` para eliminar una máquina completamente.
-
-
 
