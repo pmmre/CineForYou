@@ -1,0 +1,21 @@
+- hosts: localhost
+  become: yes
+  remote_user: ubuntu
+  tasks:
+  - name: Actualizar sistema base
+    apt: update_cache=yes upgrade=yes
+  - name: Instalar paquetes
+    apt: name=python-setuptools state=present
+  - name: Instalar paquetes2
+    apt: name=build-essential state=present
+  - name: Instalar paquetes3
+    apt: name=python-dev state=present
+  - name: Instalar pip
+    action: apt pkg=python-pip
+  - name: Instalamos dependencias de python
+    command: sudo apt-get install -y libpq-dev python-dev
+  - name: Instalamos Django
+    command: sudo pip install Django
+  - name: Instalamos mongoDB server
+    apt: name=mongodb-server state=present
+
