@@ -92,7 +92,7 @@ Se ha elegido esta herramienta porque es muy utilizada en las empresa y debe de 
 Esta herramienta es muy cómoda ya que se puede usar remotamente y se puede ejecutar con una orden para todas las máquinas que queramos. En el siguiente enlace tenemos un tutorial sobre el uso de chef: [tutorial](https://github.com/pmmre/CineForYou/tree/master/Provisionamiento/Ansible)
 
 ## Orquestación de las máquinas virtuales
-Para la orquestación se ha utilizado vagrant para realizar la creación de máquinas virtuales y ansible dónde hemos configurado todos los paquetes necesarios para su utilización. En el siguiente enlace tenemos un tutorial sobre el uso de chef: [tutorial](https://github.com/pmmre/CineForYou/tree/master/Orquestación)
+Para la orquestación se ha utilizado vagrant para realizar la creación de máquinas virtuales y ansible dónde hemos configurado todos los paquetes necesarios para su utilización. En el siguiente enlace tenemos un tutorial sobre el uso de chef: [tutorial](https://github.com/pmmre/CineForYou/tree/master/Orquestacion)
 
 #Licencia
 El software está sujeto a la licencia GNU GPL v3.
