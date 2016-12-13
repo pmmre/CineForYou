@@ -32,6 +32,7 @@ control_path = %(directory)s/ssh-%%C
 - Vagrantfile que es donde configuraremos las máquinas a desplegar y el fichero de ansible que usaremos para el provisionamiento, así como, la configuración necesaria para acceder a AWS:
 ```
 
+
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
