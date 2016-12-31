@@ -90,6 +90,7 @@ Esta herramienta es muy cómoda ya que se puede usar remotamente y se puede ejec
 # Orquestación de las máquinas virtuales
 Para la orquestación se ha utilizado vagrant para realizar la creación de máquinas virtuales y ansible dónde hemos configurado todos los paquetes necesarios para su utilización. En el siguiente enlace tenemos un tutorial sobre el uso de chef: [tutorial](https://github.com/pmmre/CineForYou/tree/master/Orquestacion)
 
+# Dockerhub
 #Licencia
 El software está sujeto a la licencia GNU GPL v3.
 
