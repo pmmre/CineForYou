@@ -16,4 +16,4 @@ RUN sudo apt-get -y install libpq-dev
 RUN sudo easy_install pip
 RUN sudo pip install --upgrade pip
 RUN sudo pip install Django
-RUN sudo apt-get install mongoDB
+RUN sudo apt-get -y install mongoDB
