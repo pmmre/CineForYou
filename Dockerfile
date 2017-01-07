@@ -3,15 +3,6 @@ FROM ubuntu:14.04
 #Autor
 MAINTAINER Pablo Martin-Moreno Ruiz <pmmr1990@gmail.com>
 
-#Add a wheel group with passwordless sudo
-RUN groupadd wheel
-RUN echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
-
-#Add user defesti to group wheel and login into it
-RUN useradd -m -g wheel cineforyou
-RUN su cineforyou
-RUN cd ~
-
 #Actualizar Sistema Base
 RUN sudo apt-get -y update
 
