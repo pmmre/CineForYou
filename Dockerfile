@@ -13,7 +13,7 @@ RUN apt-get -y install python-dev
 RUN apt-get -y install build-essential
 RUN apt-get -y install python-psycopg2
 RUN apt-get -y install libpq-dev
-RUN easy_install pip
+RUN sudo easy_install pip
 RUN pip install --upgrade pip
 RUN pip install Django
 RUN apt-get -y install mongoDB
