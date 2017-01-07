@@ -3,13 +3,13 @@ FROM ubuntu:latest
 #Autor
 MAINTAINER Pablo Martin-Moreno Ruiz <pmmr1990@gmail.com>
 
-#Add a docker group with passwordless sudo
-RUN groupadd docker
-RUN echo '%docker ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
+#Add a wheel group with passwordless sudo
+RUN groupadd wheel
+RUN echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
-#Add user defesti to group docker and login into it
-RUN useradd -m -g docker docker
-RUN su docker
+#Add user defesti to group wheel and login into it
+RUN useradd -m -g wheel defesti
+RUN su defesti
 RUN cd ~
 
 #Actualizar Sistema Base
