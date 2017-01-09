@@ -95,6 +95,8 @@ Esta herramienta es muy cómoda ya que se puede usar remotamente y se puede ejec
 Para la orquestación se ha utilizado vagrant para realizar la creación de máquinas virtuales y ansible dónde hemos configurado todos los paquetes necesarios para su utilización. En el siguiente enlace tenemos un tutorial sobre el uso de chef: [tutorial](https://github.com/pmmre/CineForYou/tree/master/Orquestacion)
 
 # Dockerhub
+Puede ejecutarse el proyecto utilizando un contenedor de Docker almacenado en Dockerhub. Podemos ver un tutorial para ejecutarlo en el siguiente enlace [Docker](https://github.com/pmmre/CineForYou/tree/master/Docker)
+
 #Licencia
 El software está sujeto a la licencia GNU GPL v3.
 
