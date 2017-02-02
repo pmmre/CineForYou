@@ -8,10 +8,7 @@ RUN apk update && apk upgrade
 
 
 RUN adduser -S -g wheel CineForYou
-USER becalbot
-
-RUN mkdir -p /home/CineForYou
-WORKDIR /home/CineForYou
+USER CineForYou
 
 # Instalar Python 
 RUN apk install python-setuptools
