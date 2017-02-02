@@ -1,13 +1,7 @@
-FROM ubuntu:14.04
+FROM rocker:rstudio
 
 #Autor
 MAINTAINER Pablo Martin-Moreno Ruiz <pmmr1990@gmail.com>
 
 #Actualizar Sistema Base
-RUN sudo apt-get -y update
-
-sudo add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu $(lsb_release -cs)/"
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
-sudo apt-get update
-sudo apt-get install r-base r-base-dev
-sudo apt-get install mongodb
+RUN sudo apt-get -y update && sudo apt-get -y install r-base && sudo apt-get -y install mongodb
