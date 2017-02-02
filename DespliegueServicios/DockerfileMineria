@@ -4,7 +4,7 @@ FROM ubuntu:14.04
 MAINTAINER Pablo Martin-Moreno Ruiz <pmmr1990@gmail.com>
 
 #Actualizar Sistema Base
-RUN apk update && apk upgrade
+RUN sudo apt-get -y update
 
 sudo add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu $(lsb_release -cs)/"
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
