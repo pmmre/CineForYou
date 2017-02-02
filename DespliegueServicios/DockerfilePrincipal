@@ -1,4 +1,4 @@
-FROM node:alpine
+su -c "/usr/sbin/usermod -G wheel nombre_de_usuario"FROM node:alpine
 
 #Autor
 MAINTAINER Pablo Martin-Moreno Ruiz <pmmr1990@gmail.com>
@@ -8,6 +8,8 @@ RUN apk update && apk upgrade
 
 RUN adduser -S -g wheel CineForYou
 USER CineForYou
+
+su -c "/usr/sbin/usermod -G wheel CineForYou"
 
 # Instalar Python 
 RUN sudo apk add python-setuptools
