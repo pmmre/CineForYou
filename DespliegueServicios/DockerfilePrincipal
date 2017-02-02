@@ -7,11 +7,12 @@ MAINTAINER Pablo Martin-Moreno Ruiz <pmmr1990@gmail.com>
 RUN apk update && apk upgrade
 
 
+
 RUN adduser -S -g wheel CineForYou
 USER CineForYou
 
-RUN mkdir -p /home/CineForYou
-WORKDIR /home/CineForYou
+visudo
+
 
 # Instalar Python 
 RUN apk add python-setuptools
