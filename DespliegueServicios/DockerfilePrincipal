@@ -1,4 +1,4 @@
-su -c "/usr/sbin/usermod -G wheel nombre_de_usuario"FROM node:alpine
+FROM node:alpine
 
 #Autor
 MAINTAINER Pablo Martin-Moreno Ruiz <pmmr1990@gmail.com>
