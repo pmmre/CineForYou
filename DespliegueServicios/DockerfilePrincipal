@@ -10,8 +10,8 @@ RUN apk update && apk upgrade
 RUN adduser -S -g wheel CineForYou
 USER CineForYou
 
-RUN mkdir -p /home/defesti/CineForYou
-WORKDIR /home/defesti/CineForYou
+RUN mkdir -p /home/CineForYou
+WORKDIR /home/CineForYou
 
 # Instalar Python 
 RUN apk add python-setuptools
