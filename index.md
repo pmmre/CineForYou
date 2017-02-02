@@ -97,6 +97,21 @@ Para la orquestación se ha utilizado vagrant para realizar la creación de máq
 # Dockerhub
 Puede ejecutarse el proyecto utilizando un contenedor de Docker almacenado en Dockerhub. Podemos ver un tutorial para ejecutarlo en el siguiente enlace [Docker](https://github.com/pmmre/CineForYou/tree/master/Docker)
 
+# Despliegue Final
+Se ha realizado un despliegue de la aplicación en varios servicios independientes que se comunican entre si:
+- Despligue de la aplicación principal que enlazará con el servicio de base de datos.
+- Despliegue del servidor de base de datos que controlará la gestión de usuarios, de peliculas, salas, y ventas.
+- Despliegue de un servidor dónde se almacenará todos los datos del servidor de base de datos, añadiendole datos obtenidos por seguimiento de patrones de usuario. Este servidor será dotado de herramientas aptas para la minería de datos.
+- Inicio de sesión externo.
+- Sistema de loggin.
+- Base de datos mongo para replica de la información importante.
+
+En el despligue de los servicios principales se ha utilizan contenedores docker previamente creado y se desplegaran con ansible desde vagrant.
+
+Para acceder a un tutorial del despliegue acceda al siguiente enlace [DespliegueServicios](https://github.com/pmmre/CineForYou/tree/master/DespliegueServicios)
+
+Para acceder a información extra acceda al siguiente enlace [DespliegueDeServiciosInfo](https://github.com/pmmre/CineForYou/tree/gh-pages/DespliegueServicios.md)
+
 #Licencia
 El software está sujeto a la licencia GNU GPL v3.
 
