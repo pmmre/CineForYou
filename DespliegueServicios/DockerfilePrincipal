@@ -6,17 +6,13 @@ MAINTAINER Pablo Martin-Moreno Ruiz <pmmr1990@gmail.com>
 #Actualizar Sistema Base
 RUN apk update && apk upgrade
 
-RUN adduser -S -g wheel CineForYou
-USER CineForYou
-
-su -c "/usr/sbin/usermod -G wheel CineForYou"
 
 # Instalar Python 
-RUN sudo apk add python-setuptools
-RUN sudo apk add python-dev
-RUN sudo apk add build-essential
-RUN sudo apk add python-psycopg2
-RUN sudo apk add libpq-dev
-RUN sudo easy_install pip
-RUN sudo pip install --upgrade pip
-RUN sudo pip install Django
+RUN apk add python-setuptools
+RUN apk add python-dev
+RUN apk add build-essential
+RUN apk add python-psycopg2
+RUN apk add libpq-dev
+RUN easy_install pip
+RUN pip install --upgrade pip
+RUN pip install Django
