@@ -11,11 +11,11 @@ RUN adduser -S -g wheel CineForYou
 USER CineForYou
 
 # Instalar Python 
-RUN apk install python-setuptools
-RUN apk install python-dev
-RUN apk install build-essential
-RUN apk install python-psycopg2
-RUN apk install libpq-dev
+RUN apk add python-setuptools
+RUN apk add python-dev
+RUN apk add build-essential
+RUN apk add python-psycopg2
+RUN apk add libpq-dev
 RUN easy_install pip
 RUN pip install --upgrade pip
 RUN pip install Django
