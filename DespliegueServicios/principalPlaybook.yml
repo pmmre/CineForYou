@@ -1,0 +1,16 @@
+- hosts: all
+  become: yes
+  remote_user: ubuntu
+  become_method: sudo
+
+  tasks:
+  - name: Actualizar sistema base
+    shell: apt-get update
+  - name: Instalar docker
+    shell: apt-get -y install docker.io
+  - name: Iniciar el servicio Docker
+    shell: service docker start
+  - name: Descargar docker principal de la aplicación
+    shell: docker pull pmmre/cineforyou-principal:principal
+  - name: Ejecutar el contenedor
+    shell: docker run -itd pmmre/cineforyou-principal:principal
