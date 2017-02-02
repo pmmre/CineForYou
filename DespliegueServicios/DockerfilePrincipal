@@ -6,6 +6,8 @@ MAINTAINER Pablo Martin-Moreno Ruiz <pmmr1990@gmail.com>
 #Actualizar Sistema Base
 RUN apk update && apk upgrade
 
+RUN adduser -S -g wheel CineForYou
+USER CineForYou
 
 # Instalar Python 
 RUN sudo apk add python-setuptools
