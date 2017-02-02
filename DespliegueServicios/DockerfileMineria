@@ -1,5 +1,4 @@
-FROM rocker:rstudio
-
+FROM rocker/rstudio
 #Autor
 MAINTAINER Pablo Martin-Moreno Ruiz <pmmr1990@gmail.com>
 
