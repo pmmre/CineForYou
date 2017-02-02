@@ -1,0 +1,24 @@
+FROM node:alpine
+
+#Autor
+MAINTAINER Pablo Martin-Moreno Ruiz <pmmr1990@gmail.com>
+
+#Actualizar Sistema Base
+RUN apk update && apk upgrade
+
+
+RUN adduser -S -g wheel CineForYou
+USER becalbot
+
+RUN mkdir -p /home/CineForYou
+WORKDIR /home/CineForYou
+
+# Instalar Python 
+RUN apk install python-setuptools
+RUN apk install python-dev
+RUN apk install build-essential
+RUN apk install python-psycopg2
+RUN apk install libpq-dev
+RUN easy_install pip
+RUN pip install --upgrade pip
+RUN pip install Django
