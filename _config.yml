@@ -1,1 +1,7 @@
 markdown: kramdown
+
+title: CineForYou
+description: Gestión de cines
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
