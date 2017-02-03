@@ -104,9 +104,9 @@ Se ha realizado un despliegue de la aplicación en varios servicios independient
 
 En el despligue de los servicios principales se ha utilizan contenedores docker previamente creado y se desplegaran con ansible desde vagrant.
 
-Para acceder a un tutorial del despliegue acceda al siguiente enlace [DespliegueServicios](https://github.com/pmmre/CineForYou/tree/master/DespliegueServicios)
+Para acceder a un tutorial del despliegue acceda al siguiente enlace [Despliegue de servicios](https://github.com/pmmre/CineForYou/tree/master/DespliegueServicios)
 
-Para acceder a información extra acceda al siguiente enlace [DespliegueDeServiciosInfo](https://github.com/pmmre/CineForYou/tree/gh-pages/DespliegueServicios.md)
+Para acceder a información extra acceda al siguiente enlace [Información de despliegue de servicios](https://github.com/pmmre/CineForYou/tree/gh-pages/DespliegueServicios.md)
 
 #Licencia
 El software está sujeto a la licencia GNU GPL v3.
