@@ -23,7 +23,7 @@ al dockerhub donde esta almacenado el servicio pulsando [aquí](https://hub.dock
 
 En este contenedor almacenaremos la base de datos en la que tendremos almacenadas toda la gestión de peliculas, salas, usuarios y transacciones económicas. Recibirá peticiones del servidor principal y, en momentos del dia en los que haya poco tráfico, enviará la infomación nueva al servidor de base de datos.
 
-Este contenedor ha sido desarrollado sobre ubuntu14.04 y se ha instalado una base de datos PostgresSQl. Podemos acceder al dockerhub donde esta almacenado el servicio pulsando [aquí](https://hub.docker.com/r/pmmre/cineforyou-gestion/).
+Este contenedor ha sido desarrollado sobre ubuntu14.04 y se ha instalado una base de datos PostgresSQL. Podemos acceder al dockerhub donde esta almacenado el servicio pulsando [aquí](https://hub.docker.com/r/pmmre/cineforyou-gestion/).
 
 ### Contenedor dedicado a la mineria de datos.
 
